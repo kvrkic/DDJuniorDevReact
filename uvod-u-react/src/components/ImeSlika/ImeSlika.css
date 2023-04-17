@@ -1,0 +1,13 @@
+.imeslika {
+  background-color: #004b80;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vh;
+}
+.slika {
+  max-width: 20vh;
+  height: auto;
+}

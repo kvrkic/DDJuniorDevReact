@@ -1,0 +1,47 @@
+{
+  "personalInformation": {
+    "name": "Karlo Vrkić",
+    "dateOfBirth": "08.05.1998.",
+    "email": "karlo.vrkic.00@fesb.hr",
+    "phone": "(+385) 98587700",
+    "address": "Hektorovićeva 13, 21210 Solin, Hrvatska",
+    "website": "https://github.com/kvrkic"
+  },
+  "workExperience": [
+    {
+      "id": "1",
+      "title": "Crypto internship 2022",
+      "company": "Blank development d.o.o.",
+      "dateAndCity": "19/07/2022 – 24/09/2022 – Split, Hrvatska",
+      "description": "Izrada web3 aplikacije za mintanje i stakeanje NFT tokena na Ethereum blockchainu, u Solidity jeziku, sa Reactom na frontendu."
+    },
+    {
+      "id": "2",
+      "title": "Agent tehničke podrške",
+      "company": "HRVATSKI TELEKOM d.d.",
+      "dateAndCity": "09/2018 – 09/2019 – Split, Hrvatska",
+      "description": "Primanje poziva korisnika, otklanjanje tehničkih poteškoća i prodaja usluga"
+    }
+  ],
+  "education": [
+    {
+      "id": "1",
+      "degree": "Stručni studij računarstva",
+      "institution": "Fakultet elektrotehnike, strojarstva i brodogradnje",
+      "date": "10/2020 – TRENUTAČNO"
+    },
+    {
+      "id": "2",
+      "degree": "Srednja škola",
+      "institution": "V. gimnazija Vladimir Nazor Split",
+      "date": "2013 – 2017"
+    }
+  ],
+  "skills": {
+    "javascript": "75",
+    "html": "75",
+    "css": "75",
+    "c": "60",
+    "python": "60"
+  }
+}
