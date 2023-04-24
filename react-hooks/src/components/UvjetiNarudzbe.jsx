@@ -6,7 +6,7 @@ const UvjetiNarudzbe = ({ onInputChange }) => {
   const handleCheckboxChange = () => {
     const value = !isChecked;
     setIsChecked(value);
-    onInputChange(`${value}`);
+    onInputChange("uvjetiNarudzbe", `${value}`);
   };
   return (
     <div className="uvjeti-narudzbe">

@@ -8,17 +8,17 @@ const Adresa = ({ onInputChange }) => {
   const handleImeChange = (event) => {
     const value = event.target.value;
     setIme(value);
-    onInputChange(value);
+    onInputChange("ime", value);
   };
   const handleDrzavaChange = (event) => {
     const value = event.target.value;
     setDrzava(value);
-    onInputChange(value);
+    onInputChange("drzava", value);
   };
   const handleAdresaChange = (event) => {
     const value = event.target.value;
     setAdresa(value);
-    onInputChange(value);
+    onInputChange("adresa", value);
   };
 
   return (

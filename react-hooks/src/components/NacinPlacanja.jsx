@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 const NacinPlacanja = ({ onInputChange }) => {
-  const [paymentMethod, setPaymentMethod] = useState("Pouzeće");
+  const [nacinPlacanja, setNacinPlacanja] = useState("Pouzeće");
 
-  const handlePaymentMethodChange = (event) => {
+  const handleNacinPlacanjaChange = (event) => {
     const value = event.target.value;
-    setPaymentMethod(value);
-    onInputChange(value);
+    setNacinPlacanja(value);
+    onInputChange("nacinPlacanja", value);
   };
   return (
     <div className="nacin-placanja">
@@ -16,9 +16,9 @@ const NacinPlacanja = ({ onInputChange }) => {
           <input
             type="radio"
             value="Pouzeće"
-            checked={paymentMethod === "Pouzeće"}
-            onChange={handlePaymentMethodChange}
-            name="paymentMethod"
+            checked={nacinPlacanja === "Pouzeće"}
+            onChange={handleNacinPlacanjaChange}
+            name="nacinPlacanja"
           />
           &nbsp; Pouzeće
         </label>
@@ -26,9 +26,9 @@ const NacinPlacanja = ({ onInputChange }) => {
           <input
             type="radio"
             value="Kartica"
-            checked={paymentMethod === "Kartica"}
-            onChange={handlePaymentMethodChange}
-            name="paymentMethod"
+            checked={nacinPlacanja === "Kartica"}
+            onChange={handleNacinPlacanjaChange}
+            name="nacinPlacanja"
           />
           &nbsp; Kartica
         </label>

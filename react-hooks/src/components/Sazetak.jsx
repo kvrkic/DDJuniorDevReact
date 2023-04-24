@@ -1,9 +1,49 @@
-const Sazetak = ({ parentComponent }) => {
-  return <div>{parentComponent}</div>;
+const Sazetak = ({ parentComponent, pokaziSazetak }) => {
+  const handleOnClick = () => {
+    window.location.reload();
+  };
+  return (
+    <div>
+      {pokaziSazetak && (
+        <div>
+          <h4>Sažetak plaćanja</h4>
+          <div className="obrub">
+            {pokaziSazetak && (
+              <div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>E-mail: </td>
+                      <td>{parentComponent.email}</td>
+                    </tr>
+                    <tr>
+                      <td>Ime: </td>
+                      <td>{parentComponent.ime}</td>
+                    </tr>
+                    <tr>
+                      <td>Država: </td>
+                      <td>{parentComponent.drzava}</td>
+                    </tr>
+                    <tr>
+                      <td>Adresa: </td>
+                      <td>{parentComponent.adresa}</td>
+                    </tr>
+                    <tr>
+                      <td>Način plaćanja: </td>
+                      <td>{parentComponent.nacinPlacanja}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            )}
+            {pokaziSazetak && (
+              <button onClick={handleOnClick}>Novo plaćanje</button>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
 };
-//TODO: onInputChange mjenja samo jedan parametar objekta, koristit
-//spread operator ka na tecaju
 
-//TODO: klikom na button provjere se uvjeti iz zadatka i u sazetak se posalje
-//objekt parentValue koji se onda ispise
 export default Sazetak;

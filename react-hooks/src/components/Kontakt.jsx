@@ -6,7 +6,7 @@ const Kontakt = ({ onInputChange }) => {
   const handleEmailChange = (event) => {
     const value = event.target.value;
     setEmail(value);
-    onInputChange(value);
+    onInputChange("email", value);
   };
   return (
     <div className="kontakt">
